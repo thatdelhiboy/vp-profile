@@ -1,0 +1,235 @@
+.hero-area {
+    padding: 70px 0 60px;
+}
+
+.profilesnipitarea,
+.profilestatsarea {
+    min-height: 500px;
+    /* border: 1px solid black; */
+    box-shadow: 0 0 4px #dad5d512;
+    margin-bottom: 35px;
+    padding: 0;
+
+}
+
+.inf_ctg {
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    line-height: 23px;
+}
+
+.boxss {
+    box-shadow: 0 1px 4px 4px #67545426;
+    height: max-content;
+    cursor: auto;
+    margin-top: 10px;
+}
+
+.profileachivments {
+    display: inline-block;
+    height: 57.6px;
+    width: 57.6px;
+    margin: 5px;
+    background-color: aqua;
+}
+
+.profileupdatetime {
+    font-size: xx-small;
+}
+
+.inf_eng {
+    position: relative;
+}
+
+.passetss {
+    position: relative;
+}
+
+.profilestatsarea_stats {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profilestats {
+    margin: 3px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    color: gray;
+    text-transform: uppercase;
+}
+
+span.num {
+
+    font-size: 29px;
+    line-height: 1.6;
+    color: black;
+}
+
+.presets {
+    padding: 10px;
+}
+
+.brandsworkedwith {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    /* background-color: rgb(230, 66, 93); */
+    border-radius: 50%;
+    box-shadow: 0 0 4px 5px #847e7e24;
+}
+
+.topprofilementions {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    /* background-color: rgb(0, 162, 255); */
+    border-radius: 50%;
+    box-shadow: 0 0 4px 5px #847e7e24;
+}
+
+.btimg {
+    width: 120px;
+    height: 120px;
+}
+
+.recentpost {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.instagrampost {
+    margin-bottom: 15px;
+    background-color: #fdf0d5;
+    cursor: pointer;
+}
+
+.instagrampostimage {
+    width: 230px;
+    height: 230px;
+    background-color: aquamarine;
+}
+
+.instagrampostimage:hover {
+    /* background-size: 2%; */
+    filter: blur(2px);
+
+}
+
+.instagrampoststats {
+    padding-top: 0px;
+}
+
+.fa-heart {
+    color: red;
+}
+
+.fa-comment-alt {
+    color: royalblue;
+}
+
+.dualrowright {
+    padding-left: 4px;
+    padding-top: 100px;
+}
+
+.dualrowleft {
+    padding-right: 4px;
+    padding-top: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    div.profilesnipitarea.col-md-4>div {
+        padding: 0;
+    }
+
+    .dualrowright {
+        padding-left: 15px;
+    }
+
+    .dualrowleft {
+        padding-right: 15px;
+    }
+}
+
+
+
+/* .stickyprofile{
+    
+}
+.stickyprofilestats{
+    
+} */
+
+
+html:not([data-scroll='0']) .stickyprofile {
+    position: fixed;
+    width: 349px;
+    top: 72px;
+}
+
+html:not([data-scroll='0']) .topallprofilestats {
+    position: fixed;
+    top: 72px;
+    z-index: 99999;
+    width: 790px;
+}
+
+html:not([data-scroll='0']) .topallprofilestatshalf {
+    display: none; 
+}
+html:not([data-scroll='1']) .topallprofilestatshalf {
+    display: block;
+}
+
+
+@media only screen and (max-width: 1199px) {
+    html:not([data-scroll='0']) .stickyprofile {
+        width: 295.7px;
+    }
+
+    html:not([data-scroll='0']) .topallprofilestats {
+        width: 670.5px;
+    }
+
+    .profilestats {
+        font-size: 10px;
+    }
+
+    .dualrowright,
+    .dualrowleft {
+        padding-top: 93px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    html:not([data-scroll='0']) .stickyprofile {
+        position: relative;
+        width: 100%;
+        margin: auto;
+    }
+
+    html:not([data-scroll='0']) .topallprofilestats {
+        position: relative;
+        display: none;
+    }
+
+    .profilestats {
+        font-size: 10px;
+    }
+
+    .dualrowright,
+    .dualrowleft {
+        padding-top: 0;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .dualrowleft {
+        padding-top: 37px;
+    }
+}
