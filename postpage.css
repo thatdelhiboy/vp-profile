@@ -1,44 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-body{
+
+body {
     font-family: 'Roboto', sans-serif;
-    
+    background-color: #EDEFF1;
+
 }
+
 .postcontainer {
     /* box-shadow: 0 0 4px 4px rgba(15, 15, 15, 0.253); */
 }
 
 .postimagecontainer {
-    background-color: bisque;
+    /* background-color: bisque; */
     text-align: center;
 }
 
 .postimagehere {
     margin: 0 auto;
-    height: 500px;
+    height: 600px;
     width: 500px;
-    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow: 0 0 5px #0000004f;
 }
 
 .postcommentscontainer {
     /* background-color:  blue; */
 }
 
-.postprofilesection {
+.profileusername {
+    padding: 10px;
+    float: left;
+}
+
+.postprofilesection{
     margin-top: 15px;
-    background-color: rgb(212, 212, 212);
+    background-color: #cecece;
+    padding: 10px;
+    border-radius: 10px;
     min-height: 2rem;
-    
+}
+.postcontainer {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 2rem;
 }
 
 .postcontainer {
     min-height: 500px;
     padding: 15px;
 }
+.viewprofilebutton {
+    margin: 25px;
+}
 
 .postedby {
     font-size: 1.4rem;
     border-bottom: 1px solid;
+}
+
+.profileimageuser {
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    background-position: center;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.allprofilestats {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.allprofilestats .profilestats {
+    padding: 0 15px;
+}
+.otherpostcontainer{
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.13);
+}
+.otherimages{
+    height: 250px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.poststats{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    text-align: center;
 }
