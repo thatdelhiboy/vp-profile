@@ -7,12 +7,13 @@ body {
 }
 
 .postcontainer {
-    /* box-shadow: 0 0 4px 4px rgba(15, 15, 15, 0.253); */
+    box-shadow: 0 0 4px 6px rgb(0 0 0 / 9%);
 }
 
 .postimagecontainer {
     /* background-color: bisque; */
     text-align: center;
+    /* box-shadow: 0 0 4px 6px rgb(0 0 0 / 9%); */
 }
 
 .postimagehere {
@@ -26,7 +27,7 @@ body {
 }
 
 .postcommentscontainer {
-    /* background-color:  blue; */
+    /* box-shadow: 0 0 4px 6px rgb(0 0 0 / 9%); */
 }
 
 .profileusername {
@@ -97,4 +98,7 @@ body {
     justify-content: space-around;
     background-color: #ffffff;
     text-align: center;
+}
+.otherpostcontainers{
+    margin-top: 15PX;
 }
