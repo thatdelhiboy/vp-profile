@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+.postcontainer {
+    /* box-shadow: 0 0 4px 4px rgba(15, 15, 15, 0.253); */
+}
+
+.postimagecontainer {
+    background-color: bisque;
+    text-align: center;
+}
+
+.postimagehere {
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.postcommentscontainer {
+    /* background-color:  blue; */
+}
+
+.postprofilesection {
+    margin-top: 15px;
+    background-color: rgb(212, 212, 212);
+    min-height: 2rem;
+    
+}
+
+.postcontainer {
+    min-height: 500px;
+    padding: 15px;
+}
+
+.postedby {
+    font-size: 1.4rem;
+    border-bottom: 1px solid;
+}
