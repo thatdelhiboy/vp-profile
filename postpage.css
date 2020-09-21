@@ -11,9 +11,9 @@ body {
 }
 
 .postimagecontainer {
-    /* background-color: bisque; */
+   
     text-align: center;
-    /* box-shadow: 0 0 4px 6px rgb(0 0 0 / 9%); */
+  
 }
 
 .postimagehere {
@@ -26,9 +26,9 @@ body {
     box-shadow: 0 0 5px #0000004f;
 }
 
-.postcommentscontainer {
-    /* box-shadow: 0 0 4px 6px rgb(0 0 0 / 9%); */
-}
+/* .postcommentscontainer {
+    
+} */
 
 .profileusername {
     padding: 10px;
