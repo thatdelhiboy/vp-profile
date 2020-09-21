@@ -74,7 +74,7 @@ span.num {
 
     font-size: 29px;
     line-height: 1.6;
-    color: black;
+    color: #ff0a05;
 }
 
 .presets {
@@ -102,8 +102,12 @@ span.num {
 }
 
 .btimg {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
+}
+.inf_cntn {
+    color: #FF0804;
+
 }
 
 .recentpost {
@@ -179,6 +183,7 @@ span.num {
 }
 
 html:not([data-scroll='0']) .topallprofilestats {
+    display: none;
     position: fixed;
     top: 72px;
     z-index: 99999;
