@@ -31,7 +31,7 @@ body{
 .boxss {
     
     padding-top: 10px;
-
+    text-align: center;
     box-shadow: 0 1px 4px 4px #67545426;
     height: max-content;
     cursor: auto;
@@ -50,9 +50,6 @@ body{
     font-size: xx-small;
 }
 
-.inf_eng {
-    position: relative;
-}
 
 .passetss {
     position: relative;
@@ -125,28 +122,18 @@ span.num {
     cursor: pointer;
 }
 
-.instagrampostimage {
-    width: 230px;
-    height: 230px;
-    background-color: aquamarine;
-}
 
-.instagrampostimage:hover {
-    /* background-size: 2%; */
-    filter: blur(2px);
-
-}
 
 .instagrampoststats {
     padding-top: 0px;
 }
 
 .fa-heart {
-    color: red;
+    color: #ff00007a;
 }
 
 .fa-comment-alt {
-    color: royalblue;
+    color: #919398;
 }
 
 .dualrowright {
@@ -246,4 +233,27 @@ html:not([data-scroll='0']) .topallprofilestats {
     html:not([data-scroll='0']) .topallprofilestats {
         display: none;
     }
+}
+
+
+.instagrampost {
+    background-color: #ffffff; 
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    /* background-color: #d9ff00; */
+    box-shadow: 0 0 4px #0000004d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.instagrampostimage {
+    border-radius: 10px;
+    padding: 10px;
+    height: 250px;
+    background-color: aquamarine;
+}
+
+.boxssfixheight{
+    height: 280px;
+
 }

@@ -63,8 +63,8 @@ $(window).scroll(function(){
           marker: {
             type: 'square',
             borderColor: 'none',
-            borderRadius: '25px',
-            size: '13px'
+            borderRadius: '10px',
+            size: '10px'
           },
           shadow: false,
           toggleAction: 'none',
@@ -190,7 +190,7 @@ $(window).scroll(function(){
           }
         },
         series: [{
-            text: '2-3 Ft',
+            text: '1%-2% eng',
             values: [1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 1, 2, 2, 1, 2],
             legendMarker: {
               backgroundColor: '#7FCDBB'

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EDEFF1;
+
+}
+.hero-area {
+    padding: 70px 0 60px;
+}
+.instagrampost {
+    background-color: #ffffff; 
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 15px;
+    /* background-color: #d9ff00; */
+    box-shadow: 0 0 4px #0000004d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.instagrampostimage {
+    border-radius: 10px;
+    padding: 10px;
+    height: 250px;
+    background-color: aquamarine;
+}
+
+.fa-heart {
+    color: #ff00007a;
+}
+
+.fa-comment-alt {
+    color: #919398;
+}
+.fa-search{
+    color: #919398;
+}
+.boxsec{
+    text-align: center;
+}
+
+.instagrampoststats{
+    padding-top: 10px;
+}
+
+.instagrampoststatslikes,.instagrampoststatscomments, .youtubepostviews{
+    padding: 0px 5px;
+}
+.postprofile{
+    padding-bottom: 10px;
+    text-align: left;
+}
+.postusername{
+    font-size: 16px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #6caaec;
+    border-color: #6caaec;
+}
+.form-control{
+    width: auto;
+}
+
+select.form-control{
+    display: inline-block;
+}
