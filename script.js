@@ -44,6 +44,7 @@ $(window).scroll(function(){
         //   y: '38.5px'
         // },
         legend: {
+          display: 'none',
           align: 'center',
           borderWidth: '0px',
           footer: {
@@ -72,7 +73,7 @@ $(window).scroll(function(){
         },
         plot: {
           tooltip: {
-            text: ' The surf will be about %v feet.',
+            text: ' Got around %v % engagment.',
             fontColor: 'white',
             fontSize: '14px',
             textAlign: 'left'
