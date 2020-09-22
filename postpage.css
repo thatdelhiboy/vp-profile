@@ -126,18 +126,37 @@ body {
     background-color: aquamarine;
 }
 
-.instagrampostimage:hover {
-    /* background-size: 2%; */
-    filter: blur(2px);
 
-}
 .fa-heart {
-    color: red;
+    color: #ff00007a;
 }
 
 .fa-comment-alt {
-    color: royalblue;
+    color: #919398;
 }
 .boxsec{
     text-align: center;
+}
+
+.instagrampoststats{
+    padding-top: 10px;
+}
+
+.instagrampoststatslikes,.instagrampoststatscomments{
+    padding: 0 15px;
+}
+
+.posthashtags{
+    display: flex;
+    flex-wrap: wrap;
+}
+.posthashtags>.hashtags{
+    padding: 0 8px;
+    border-radius: 10px;
+    margin: 2px;
+    color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.301);
+}
+.currentpostcomment {
+    padding: 0 30px;
 }

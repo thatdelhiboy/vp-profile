@@ -63,13 +63,13 @@ $(window).scroll(function(){
           marker: {
             type: 'square',
             borderColor: 'none',
-            borderRadius: '8px',
+            borderRadius: '25px',
             size: '13px'
           },
           shadow: false,
           toggleAction: 'none',
           verticalAlign: 'bottom',
-          width: '80%'
+          width: '100%'
         },
         plot: {
           tooltip: {
@@ -78,9 +78,9 @@ $(window).scroll(function(){
             fontSize: '14px',
             textAlign: 'left'
           },
-          aspect: 'none',
+          aspect: 'size',
           borderColor: '#eeeeee',
-          borderRadius: '7px',
+          borderRadius: '25px',
           borderWidth: '2px',
           rules: [{
               backgroundColor: '#081D58',
