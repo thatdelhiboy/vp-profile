@@ -9,8 +9,9 @@ body {
     padding: 70px 0 60px;
 }
 .instagrampost {
+    padding-top: 19px;
     background-color: #ffffff; 
-    padding: 10px;
+    padding: 7px 10px;
     text-align: center;
     margin-bottom: 15px;
     /* background-color: #d9ff00; */
@@ -22,7 +23,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     height: 250px;
-    background-color: aquamarine;
+    background-color: #edeff1;
 }
 
 .fa-heart {
@@ -35,6 +36,12 @@ body {
 .fa-search{
     color: #919398;
 }
+.fa-eye{
+    color:#ff6161;
+}
+.fa-retweet{
+    color:#ff6161;
+}
 .boxsec{
     text-align: center;
 }
@@ -43,15 +50,18 @@ body {
     padding-top: 10px;
 }
 
-.instagrampoststatslikes,.instagrampoststatscomments, .youtubepostviews{
+.instagrampoststatslikes,.instagrampoststatscomments, .youtubepostviews,.twitterpostretweet{
     padding: 0px 5px;
 }
-.postprofile{
-    padding-bottom: 10px;
+.postprofile {
+    padding-bottom: 7px;
+    padding-top: 0px;
     text-align: left;
 }
 .postusername{
+    display: inline;
     font-size: 16px;
+    padding-left: 40px;
 }
 .btn-primary {
     color: #fff;
@@ -64,4 +74,28 @@ body {
 
 select.form-control{
     display: inline-block;
+}
+.profileimageofuser{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: blue;
+    top: 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.socialiconpost{
+    font-size: 20px;
+}
+@media (max-width: 767px){
+    .pr-2, .px-2 {
+        padding-right: .0rem!important;
+        padding-left: .0rem!important;
+    }
+    .row {
+        margin-right: -0px;
+        margin-left: -0px;
+    }
 }

@@ -5,22 +5,24 @@ body {
     background-color: #EDEFF1;
 
 }
+
 .hero-area {
     padding: 70px 0 60px;
 }
+
 /* body *{
     background-color: #ffffff; 
  } */
 
 .postcontainer {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     box-shadow: 0 0 4px 6px rgb(0 0 0 / 8%);
 }
 
 .postimagecontainer {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     text-align: center;
-  
+
 }
 
 .postimagehere {
@@ -41,13 +43,14 @@ body {
 }
 
 .postprofilesection {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     margin-top: 15px;
     padding: 10px;
     border-radius: 10px;
     min-height: 2rem;
     box-shadow: 0 0 5px #00000040;
 }
+
 .postcontainer {
     margin-top: 15px;
     padding: 10px;
@@ -59,6 +62,7 @@ body {
     min-height: 500px;
     padding: 15px;
 }
+
 .viewprofilebutton {
     margin: 25px;
 }
@@ -73,7 +77,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #ffffff; 
+    background-color: #ffffff;
     background-position: center;
     float: left;
     background-repeat: no-repeat;
@@ -89,28 +93,32 @@ body {
 .allprofilestats .profilestats {
     padding: 0 15px;
 }
-.otherpostcontainer{
+
+.otherpostcontainer {
     box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.13);
 }
-.otherimages{
+
+.otherimages {
     height: 250px;
     width: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.poststats{
+
+.poststats {
     display: flex;
     justify-content: space-around;
     background-color: #ffffff;
     text-align: center;
 }
-.otherpostcontainers{
+
+.otherpostcontainers {
     margin-top: 15PX;
 }
 
 .instagrampost {
-    background-color: #ffffff; 
+    background-color: #ffffff;
     padding: 10px;
     text-align: center;
     margin-bottom: 15px;
@@ -119,6 +127,7 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
+
 .instagrampostimage {
     border-radius: 10px;
     padding: 10px;
@@ -134,29 +143,202 @@ body {
 .fa-comment-alt {
     color: #919398;
 }
-.boxsec{
+
+.boxsec {
     text-align: center;
 }
 
-.instagrampoststats{
+.instagrampoststats {
     padding-top: 10px;
 }
 
-.instagrampoststatslikes,.instagrampoststatscomments{
+.instagrampoststatslikes,
+.instagrampoststatscomments {
     padding: 0 15px;
 }
 
-.posthashtags{
+.posthashtags {
     display: flex;
     flex-wrap: wrap;
 }
-.posthashtags>.hashtags{
+
+.posthashtags>.hashtags {
     padding: 0 8px;
     border-radius: 10px;
     margin: 2px;
     color: black;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.301);
 }
+
 .currentpostcomment {
     padding: 0 30px;
+}
+
+@media (max-width: 767px) {
+
+    .pr-2,
+    .px-2 {
+        padding-right: .0rem !important;
+        padding-left: .0rem !important;
+    }
+
+    .row {
+        margin-right: -0px;
+        margin-left: -0px;
+    }
+
+    .profileimageuser {
+        margin: 10px;
+    }
+
+    .postimagehere {
+        margin: 0 auto;
+        height: 300px;
+        width: 300px;
+    }
+
+    .col,
+    .col-1,
+    .col-10,
+    .col-11,
+    .col-12,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-auto,
+    .col-lg,
+    .col-lg-1,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-auto,
+    .col-md,
+    .col-md-1,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-auto,
+    .col-sm,
+    .col-sm-1,
+    .col-sm-10,
+    .col-sm-11,
+    .col-sm-12,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-auto,
+    .col-xl,
+    .col-xl-1,
+    .col-xl-10,
+    .col-xl-11,
+    .col-xl-12,
+    .col-xl-2,
+    .col-xl-3,
+    .col-xl-4,
+    .col-xl-5,
+    .col-xl-6,
+    .col-xl-7,
+    .col-xl-8,
+    .col-xl-9,
+    .col-xl-auto {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .allprofilestats>span{
+        margin: 15px 0;
+    }
+
+    .allprofilestats>div {
+        display: none;
+    }
+
+    .viewprofilebutton {
+        margin: 0px 6px;
+        margin-top: 25px;
+    }
+
+    .profileusername {
+        margin: 10px 0;
+        padding: 0px;
+    }
+
+
+    /* padding  */
+    .container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .hero-area {
+        padding: 30px 0 60px;
+    }
+    .postcontainer {
+        border-radius: 0px;
+        padding: 0px;
+    }
+    .instagrampost {
+        border-radius: 0px;
+        padding: 0px;
+        margin-bottom: 0px;
+    }
+    .pt-2, .py-2 {
+        padding-top: .0rem!important;
+    }
+    .instagrampostimage{
+        border-radius: 0;
+        height: 100vw;
+    }
+    .postimagehere {
+        height: 100vw;
+        width: 100vw;
+        border-radius: 0px;
+    }
+    .postcommentscontainer {
+        padding: 10px;
+    }
+    .postprofilesection {
+        border-radius: 0px;
+    }
+    .home-4-footer-area {
+        padding: 20px;
+    }
+    .instagrampoststats {
+        padding-top: 0px;
+        padding-bottom: 25px;
+    }
+    .stoparea{
+        background: linear-gradient(41deg, #ff0000 0%, #ffbc5d 100%);
+        padding-bottom: 11px;
+    }
+    .stoparea>h5{
+        color: white;
+    }
 }

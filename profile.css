@@ -257,3 +257,13 @@ html:not([data-scroll='0']) .topallprofilestats {
     height: 280px;
 
 }
+@media (max-width: 767px){
+    .pr-2, .px-2 {
+        padding-right: .0rem!important;
+        padding-left: .0rem!important;
+    }
+    .row {
+        margin-right: -0px;
+        margin-left: -0px;
+    }
+}
