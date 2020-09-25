@@ -230,7 +230,7 @@
     <div class="container" style="padding-bottom: 40px;padding-top: 10px;">
         <div class="container-fluid">
             <!-- Content Row -->
-
+<form action="POST">
             <div class="row">
                 <div class="col-12 row" style="min-height: 200px;margin-bottom: 10px;padding:10px 0;">
                     <div class="col-md-6">
@@ -238,8 +238,8 @@
                         <div class="searchinputarea">
                             <h5 class="searchheadding">Select Brand</h5>
                             <div class="inputarea py-1">
-                                <input class="form-control" type="text" id="searchbrandinput"
-                                    placeholder="Enter Username Here">
+                                <input class="form-control" type="text" name="profile" id="searchbrandinput"
+                                    placeholder="Enter Username Here" required>
                                 <div class="searchlist" style="display: none;">
                                     <ul class="searchtagslist" id="searchbrandlist">
                                         <li class="searchtags">Puma <i class="fa fa-times corsssign"
@@ -250,14 +250,14 @@
                             <h5 class="searchheadding" style="padding-top: 25px;">Select Platform:-</h5>
                             <div class="prohashselect">
 
-                                <input class="checkbox-tools" type="radio" id="instagramselect" name="socialmediaselect"
-                                    checked="">
+                                <input class="checkbox-tools" type="radio" id="instagramselect" value="instagram" name="socialmediaselect"
+                                    checked>
                                 <label class="for-checkbox-tools" for="instagramselect"><i
                                         class="fab fa-instagram"></i></label>
-                                <input class="checkbox-tools" type="radio" id="youtubeselect" name="socialmediaselect">
+                                <input class="checkbox-tools" type="radio" id="youtubeselect" value="youtube" name="socialmediaselect">
                                 <label class="for-checkbox-tools" for="youtubeselect"><i
                                         class="fab fa-youtube"></i></label>
-                                <input class="checkbox-tools" type="radio" id="twiterselect" name="socialmediaselect">
+                                <input class="checkbox-tools" type="radio" id="twiterselect" value="twitter" name="socialmediaselect">
                                 <label class="for-checkbox-tools" for="twiterselect"><i
                                         class="fab fa-twitter"></i></label>
                             </div>
@@ -268,7 +268,7 @@
                         <div class="searchinputarea">
                             <h5 class="searchheadding">Select Hashtags</h5>
                             <div class="inputarea py-1">
-                                <input class="form-control" type="text" placeholder="Enter hastags here">
+                                <input class="form-control" name="hashtag" type="text" placeholder="Enter hastags here" required>
                             </div>
                             <div class="searchlist" style="display: none;">
                                 <ul class="searchtagslist">
@@ -285,12 +285,13 @@
                                 </ul>
                             </div>
                             <div class="searchbuttonarea float-right">
-                                <input type="button" value="Submit" class="btn btn-primary" id="searchbutton">
+                                <input type="submit" value="Submit" class="btn btn-primary" id="searchbutton">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </form>
             <div class="searchtexterror">
                 <p>Error will display here</p>
             </div>

@@ -136,26 +136,12 @@ span.num {
     color: #919398;
 }
 
-.dualrowright {
-    padding-left: 4px;
-}
-
-.dualrowleft {
-    padding-right: 4px;
-}
 
 @media only screen and (max-width: 600px) {
     div.profilesnipitarea.col-md-4>div {
         padding: 0;
     }
 
-    .dualrowright {
-        padding-left: 15px;
-    }
-
-    .dualrowleft {
-        padding-right: 15px;
-    }
 }
 
 
