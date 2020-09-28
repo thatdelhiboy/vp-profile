@@ -39,11 +39,22 @@ body{
 }
 
 .profileachivments {
+    background: url(./imagers/pachi.png) no-repeat;
+    background-size: 100% 2000%;
+    background-size: cover;
     display: inline-block;
     height: 57.6px;
     width: 57.6px;
     margin: 5px;
-    background-color: aqua;
+}
+.profileachivments.genderm{
+    background-position: 0 0%;
+}
+.profileachivments.genderf{
+    background-position: 0 5%;
+}
+.profileachivments.genderb{
+    background-position: 0 10.5%;
 }
 
 .profileupdatetime {
@@ -252,4 +263,14 @@ html:not([data-scroll='0']) .topallprofilestats {
         margin-right: -0px;
         margin-left: -0px;
     }
+}
+
+.profiletabs{
+    color: black;
+}
+.nav-tabs .nav-item a.nav-link.profiletabs.active{
+    color: rgb(0, 0, 0)!important;
+}
+.nav-tabs .nav-item a.nav-link.profiletabs{
+    color: rgb(158, 158, 158)!important;
 }
