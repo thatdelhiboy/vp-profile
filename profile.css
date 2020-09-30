@@ -274,3 +274,16 @@ html:not([data-scroll='0']) .topallprofilestats {
 .nav-tabs .nav-item a.nav-link.profiletabs{
     color: rgb(158, 158, 158)!important;
 }
+
+.boxss.combine>.boxsec>.inf_ctg{
+    text-align: left;
+}
+
+.boxss.combine>.boxsec>.inf_ctg>h5{
+    text-align: center;
+}
+.combineallstats{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
