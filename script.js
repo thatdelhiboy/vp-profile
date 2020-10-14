@@ -16,241 +16,124 @@ $(window).scroll(function () {
 // heat   map chat con fig script
 
 
-ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"]; // CHART CONFIG
-// -----------------------------
-let chartConfig = {
-  globals: {
-    fontFamily: 'Roboto'
+var options = {
+  series: [{
+    name: 'Jan',
+    data: generateData(20, {
+      min: -30,
+      max: 55
+    })
   },
-  graphset: [{
-    type: 'piano',
-    theme: 'classic',
-    backgroundColor: '#fff',
-    title: {
-      text: 'Best Time to Post',
-      adjustLayout: true,
-      paddingBottom: '25px',
-      backgroundColor: 'none',
-      fontColor: '#05636c',
-      fontSize: '24px'
-    },
-    // subtitle: {
-    //   text: 'Black\'s Beach - La Jolla',
-    //   backgroundColor: 'none',
-    //   fontColor: '#05636c',
-    //   fontSize: '14px',
-    //   height: '25px',
-    //   x: '-9.5px',
-    //   y: '38.5px'
-    // },
-    legend: {
-      display: 'none',
-      align: 'center',
-      borderWidth: '0px',
-      footer: {
-        backgroundColor: 'none',
-        borderColor: 'none',
-        fontColor: '#05636c',
-        fontSize: '14px',
-        textAlign: 'center'
-      },
-      item: {
-        borderColor: 'none',
-        fontColor: '#05636c',
-        size: '13px'
-      },
-      layout: 'x6',
-      marker: {
-        type: 'square',
-        borderColor: 'none',
-        borderRadius: '10px',
-        size: '10px'
-      },
-      shadow: false,
-      toggleAction: 'none',
-      verticalAlign: 'bottom',
-      width: '100%'
-    },
-    plot: {
-      tooltip: {
-        text: ' Got around %v % engagment.',
-        fontColor: 'white',
-        fontSize: '14px',
-        textAlign: 'left'
-      },
-      aspect: 'size',
-      borderColor: '#eeeeee',
-      borderRadius: '25px',
-      borderWidth: '2px',
-      rules: [{
-          backgroundColor: '#081D58',
-          fontColor: '#05636c',
-          rule: '%node-value > 6'
+  {
+    name: 'Feb',
+    data: generateData(20, {
+      min: -30,
+      max: 55
+    })
+  },
+  {
+    name: 'Mar',
+    data: generateData(20, {
+      min: -30,
+      max: 55
+    })
+  },
+  {
+    name: 'Apr',
+    data: generateData(20, {
+      min: -30,
+      max: 55
+    })
+  },
+  {
+    name: 'May',
+    data: generateData(20, {
+      min: -30,
+      max: 55
+    })
+  },
+  {
+    name: 'Jun',
+    data: generateData(20, {
+      min: -30,
+      max: 55
+    })
+  },
+  {
+    name: 'Jul',
+    data: generateData(20, {
+      min: -30,
+      max: 55
+    })
+  },
+  {
+    name: 'Aug',
+    data: generateData(20, {
+      min: -30,
+      max: 55
+    })
+  },
+  {
+    name: 'Sep',
+    data: generateData(20, {
+      min: -30,
+      max: 55
+    })
+  }
+],
+  chart: {
+  height: 350,
+  type: 'heatmap',
+},
+plotOptions: {
+  heatmap: {
+    shadeIntensity: 0.5,
+    radius: 0,
+    useFillColorAsStroke: true,
+    colorScale: {
+      ranges: [{
+          from: -30,
+          to: 5,
+          name: 'low',
+          color: '#00A100'
         },
         {
-          backgroundColor: '#253494',
-          fontColor: '#05636c',
-          rule: '%node-value > 4 && %node-value <= 5'
+          from: 6,
+          to: 20,
+          name: 'medium',
+          color: '#128FD9'
         },
         {
-          backgroundColor: '#225EA8',
-          fontColor: '#05636c',
-          rule: '%node-value > 3 && %node-value <= 4'
+          from: 21,
+          to: 45,
+          name: 'high',
+          color: '#FFB200'
         },
         {
-          backgroundColor: '#1D91C0',
-          fontColor: '#05636c',
-          rule: '%node-value > 2 && %node-value <= 3'
-        },
-        {
-          backgroundColor: '#41B6C4',
-          fontColor: '#05636c',
-          rule: '%node-value > 1 && %node-value <= 2'
-        },
-        {
-          backgroundColor: '#7FCDBB',
-          fontColor: '#05636c',
-          rule: '%node-value > 0 && %node-value <= 1'
+          from: 46,
+          to: 55,
+          name: 'extreme',
+          color: '#FF0000'
         }
       ]
-    },
-    plotarea: {
-      margin: 'dynamic'
-    },
-    scaleX: {
-      values: ['2a', '3a', '4a', '5a', '6a', '7a', '8a', '9a', '10a', '11a', '12a', '1p', '2p', '3p', '4p', '5p', '6p', '7p', '8p', '9p', '10p', '11p'],
-      guide: {
-        visible: false
-      },
-      item: {
-        borderColor: 'none',
-        fontColor: '#05636c',
-        size: '13px'
-      },
-      lineWidth: '0px',
-      placement: 'opposite',
-      tick: {
-        visible: false
-      },
-      zooming: true,
-      zoomSnap: true
-    },
-    scaleY: {
-      values: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
-      guide: {
-        visible: false
-      },
-      item: {
-        borderColor: 'none',
-        fontColor: '#05636c',
-        size: '13px'
-      },
-      lineWidth: '0px',
-      mirrored: true,
-      tick: {
-        visible: false
-      },
-      zooming: true
-    },
-    zoom: {
-      alpha: 0.75,
-      backgroundColor: '#e5e8ea',
-      borderColor: '#009',
-      borderWidth: '2px',
-      preserveZoom: true
-    },
-    scrollX: {
-      bar: {
-        alpha: .5,
-        backgroundColor: '#01579B',
-        borderRadius: '3px'
-      },
-      handle: {
-        backgroundColor: '#01579B',
-        borderRadius: '5px',
-        borderTop: 'none',
-        borderRight: 'none',
-        borderBottom: 'none',
-        borderLeft: 'none'
-      }
-    },
-    scrollY: {
-      bar: {
-        alpha: .5,
-        backgroundColor: '#01579B',
-        borderRadius: '3px'
-      },
-      handle: {
-        backgroundColor: '#01579B',
-        borderRadius: '5px',
-        borderTop: 'none',
-        borderRight: 'none',
-        borderBottom: 'none',
-        borderLeft: 'none'
-      }
-    },
-    series: [{
-        text: '1%-2% eng',
-        values: [1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 1, 2, 1, 2, 2, 1, 2],
-        legendMarker: {
-          backgroundColor: '#7FCDBB'
-        }
-      },
-      {
-        text: '3-4 Ft',
-        values: [2, 2, 2, 2, 2, 2, 3, 3, 3, 2, 2, 3, 3, 3, 3, 2, 2, 2, 2, 1, 2, 3],
-        legendMarker: {
-          backgroundColor: '#41B6C4'
-        }
-      },
-      {
-        text: '4-5 Ft',
-        values: [2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, 4, 4, 3, 3, 3, 2],
-        legendMarker: {
-          backgroundColor: '#1D91C0'
-        }
-      },
-      {
-        text: '5-6 Ft',
-        values: [2, 3, 3, 2, 3, 3, 3, 4, 5, 4, 4, 5, 4, 4, 5, 4, 4, 3, 3, 3, 3, 3],
-        legendMarker: {
-          backgroundColor: '#225EA8'
-        }
-      },
-      {
-        text: '6-7 Ft',
-        values: [3, 2, 3, 2, 3, 3, 4, 4, 4, 5, 5, 5, 5, 4, 4, 5, 4, 3, 2, 3, 4, 4],
-        legendMarker: {
-          backgroundColor: '#253494'
-        }
-      },
-      {
-        text: '7-8 Ft',
-        values: [2, 3, 5, 6, 5, 6, 5, 6, 5, 6, 6, 6, 6, 5, 6, 5, 6, 4, 5, 4, 4, 4],
-        legendMarker: {
-          backgroundColor: '#081D58'
-        }
-      },
-      {
-        text: '1-2 Ft',
-        values: [3, 2, 3, 2, 3, 3, 4, 4, 4, 5, 5, 5, 5, 4, 4, 5, 4, 3, 2, 3, 4, 4],
-        legendMarker: {
-          backgroundColor: '#fff'
-        },
-        legendItem: {
-          visible: false
-        }
-      }
-    ]
-  }]
+    }
+  }
+},
+dataLabels: {
+  enabled: false
+},
+stroke: {
+  width: 1
+},
+title: {
+  text: 'HeatMap Chart with Color Range'
+},
 };
 
-// RENDER CHARTS
-// -----------------------------
-zingchart.render({
-  id: 'myChartindia',
-  data: chartConfig
-});
+var chart = new ApexCharts(document.querySelector("#myChartindia"), options);
+chart.render();
+
+
 
 
 
